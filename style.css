@@ -13,7 +13,7 @@
   display: flex;
 }
 .bg-color{
-  color: #AAAAAA;
+  background-color: #f3f0f063;
 }
 .dark{
   color: #3A3A3A;
@@ -92,6 +92,7 @@ nav .list a{
   margin-right: 45px;
 }
 
+/* Body Style */
 .logos{
   margin: 0 165px;
   justify-content: space-evenly;
@@ -99,4 +100,177 @@ nav .list a{
   border-bottom: 1px solid rgb(167, 167, 167);
   padding: 40px 0;
   margin-bottom: 100px;
+}
+.collections{
+  margin: 0 195px;
+  margin-bottom: 100px;
+
+}
+.collections > h3{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.collections > h2{
+  font-size: 16px;
+  font-weight: 700;
+  align-items: center;
+  text-align: end;
+  margin-top: 50px;
+  color: #E02C6D;
+  cursor: pointer;
+}
+.collections > h2 svg{
+  margin-left: 5px;
+  margin-bottom: -5px;
+}
+.card{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 17px 15px;
+}
+.card img{
+  width: 100%;
+}
+.card h3{
+  color: rgb(37, 36, 34);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 10px 0 5px 0;
+}
+.card h4{
+  color: rgb(37, 36, 34);
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+.card h5{
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  color: #837979;
+}
+.stars{
+  flex-direction: row;
+  color: rgb(37, 36, 34);
+  font-size: 16px;
+  font-weight: 700;
+  gap: 10px;
+  padding: 8px 0;
+}
+.star-icons{
+  color: orange;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.feature{
+  margin: 0 195px;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+.feature-text{
+  align-items: center;
+}
+.feature-text h1{
+  font-size: 38px;
+  font-weight: 700;
+}
+.feature-text p{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.feature-text button{
+  border-radius: 0;
+}
+
+/* Footer Style */
+.foot{
+  text-align: center;
+  background-color: #0a0826;
+  color: white;
+  padding: 50px 0;
+}
+.foot h4{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.foot p{
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+  gap: 1.5%;
+  margin-top: 20px;
+}
+
+.hide{
+  display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+  .head,
+  .logos,
+  .collections,
+  .feature{
+    margin: 25px;
+  }
+  nav{
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner img{
+    left: 80px;
+    top: 200px;
+    width: 70%;
+  }
+  .banner-content{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .banner-image{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .banner-image img{
+    margin: 0;
+    width: 80%;
+    top: 0;
+    left: 0;
+  }
+  .btn-primary{
+    margin: 0 auto;
+  }
+  .logos{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .card-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .collections{
+    margin-bottom: 50px;
+  }
+  .feature{
+    text-align: center ;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
 }
